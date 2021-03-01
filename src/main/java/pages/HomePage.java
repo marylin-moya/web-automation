@@ -28,4 +28,9 @@ public class HomePage {
         clickLink("Dynamic Loading");
         return new DynamicLoadingPage(driver);
     }
+
+    public HoversPage clickHoversPage() {
+        clickLink("Hovers");
+        return new HoversPage(driver);
+    }
 }
