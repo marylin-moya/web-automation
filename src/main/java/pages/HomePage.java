@@ -18,8 +18,14 @@ public class HomePage {
         clickLink("Form Authentication");
         return new LoginPage(driver);
     }
+
     public DropdownPage clickDropdown() {
         clickLink("Dropdown");
         return new DropdownPage(driver);
+    }
+
+    public DynamicLoadingPage clickDynamicLoadingPage() {
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
     }
 }
