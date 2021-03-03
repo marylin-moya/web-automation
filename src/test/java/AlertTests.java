@@ -10,4 +10,12 @@ public class AlertTests extends BaseTest {
         alertsPage.acceptAlert();
         assertEquals(alertsPage.getResult(), "You successfuly clicked an alert", "Results text incorrect");
     }
+    @Test
+    public void testGetTextFromAlert(){
+        var alertsPage = homePage.clickJavaScriptAlerts();
+        alertsPage.triggerConfirm();
+        String text = alertsPage.getAlertText();
+        alertsPage.DismissAlert();
+        assertEquals(text, "I am a JS Confirm", "Alert text incorrect");
+    }
 }
