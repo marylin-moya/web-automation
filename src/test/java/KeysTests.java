@@ -24,5 +24,6 @@ public class KeysTests extends BaseTest {
         keyPressesPage.selectAll();
         keyPressesPage.typeText("new text");
         assertEquals(keyPressesPage.getResult(), "You entered: T", "Wrong Key pressed");
+        assertEquals(keyPressesPage.getValue(), "new text", "Wrong Value typed");
     }
 }

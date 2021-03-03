@@ -23,4 +23,7 @@ public class KeyPressesPage extends BasePage {
     public String getResult() {
         return driver.findElement(result).getText();
     }
+    public String getValue(){
+        return driver.findElement(input).getAttribute("value");
+    }
 }
