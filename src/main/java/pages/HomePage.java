@@ -53,4 +53,9 @@ public class HomePage {
         clickLink("Entry Ad");
         return new EntryAdModal(driver);
     }
+
+    public EditorPage clickEditorPage(){
+        clickLink("WYSIWYG Editor");
+        return new EditorPage(driver);
+    }
 }
