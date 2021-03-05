@@ -48,4 +48,9 @@ public class HomePage {
         clickLink("File Upload");
         return new FileUploadPage(driver);
     }
+
+    public EntryAdModal clickEntryAdPage() {
+        clickLink("Entry Ad");
+        return new EntryAdModal(driver);
+    }
 }
